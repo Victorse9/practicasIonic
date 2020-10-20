@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <p>{{ name }}</p>
+  <ion-input value="Apellido"></ion-input>
+  <p><a href = "{{url}}">Mucho lol</a></p>
+  <p><input disabled type ="text" value="Hola"/></p>
+  <p><input disabled="false" type ="text" value="Hola"/></p>
+  <p><input disabled="{{activo}}" type ="text" value="Hola"/></p>
+
+  <p><input [disabled]="false" type="text" value="hola"/></p>
+  <p><input [disabled]="activo" type="text" value="hola"/></p>
+  <p><input bind-disabled="activo" type="text" value="hola"/></p>
+
+  <p><input [(ngModel)]= "poblacion" type="text">{{poblacion}}</p>
+  <p><input [ngModel]= "codigoPostal" type="text">{{codigoPostal}}</p>
+
+  <ion-button color="medium" routerLink="/misil">Pagina 1</ion-button>
+
+  <table border="3">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>DNI</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of personas">
+      <td>{{p.nombre}}</td>
+      <td>{{p.apellido}}</td>
+      <td>{{p.dni}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<ion-list *ngFor="let e of elementos">
+  <ion-item routerLink = {{e.ruta}}>
+    <ion-icon name = {{e.icono}}></ion-icon>
+    {{e.titulo}}
+  </ion-item>
+</ion-list>
+</ion-content>

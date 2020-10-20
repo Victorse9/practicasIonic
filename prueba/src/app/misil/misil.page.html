@@ -1,0 +1,16 @@
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>misil</ion-title>
+  </ion-toolbar>
+</ion-header>
+-->
+<app-cabecera titulo="MISIL"></app-cabecera>
+<ion-content>
+  <ion-list>
+    <ion-item><ion-back-button defaultHref="inicio"></ion-back-button></ion-item>
+    <ion-item><ion-label>Lista</ion-label></ion-item>
+    <ion-item> <input [(ngModel)]= "poblacion" type="text">{{poblacion}}</ion-item>
+    <ion-item><input [ngModel]= "codigoPostal" type="text">{{codigoPostal}}</ion-item>
+    <ion-item><input [disabled] = "false" type="text" value="hola"/></ion-item>
+  </ion-list>
+</ion-content>
