@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+
+    <!--Boton Atras-->
+    <ion-buttons slot = "start">
+      <ion-back-button defaultHref="/" color = "tertiary"></ion-back-button>
+    </ion-buttons>
+    <!--Titulo-->
+    <ion-title><ion-icon name="information-circle"></ion-icon> FCT</ion-title>
+    <!--Icono-->
+    <ion-button slot="primary">
+      <ion-icon name="information-circle"></ion-icon>
+    </ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--Primer ION-CARD-->
+  <ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>¿Qué es la FCT, las prácticas en las empresas?</ion-card-subtitle>
+    <ion-card-title>FCT</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Todos los ciclos formativos incluyen una fase de formación práctica en la empresa,
+    esta fase se desarrolla a través del módulo profesional de Formación en Centros de Trabajo (FCT)
+    no tiene carácter laboral ni relación becaria y se realiza, una vez superados todos los módulos
+    profesionales del ciclo formativo, en el entorno real de la empresa.
+  </ion-card-content>
+  </ion-card>
+
+  <!--Segundo ION-CARD-->
+  <ion-card>
+    <ion-item>
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-label>Formacion en Centros de Trabajo</ion-label>
+      <ion-button fill="outline" slot="end" 
+      href="https://www.todofp.es/sobre-fp/empleadores/formacion-centros-trabajo/que-es-fct-practicas-en-empresas.html" target="_blank">
+      Más Información</ion-button>
+    </ion-item>
+
+    <ion-card-content>
+        Haz Click en el botón Más Información si quiere saber más
+    </ion-card-content>
+  </ion-card>
+
+  <!--Tercer ION-CARD-->
+  <ion-card>
+
+    <ion-item>
+      <ion-icon name="star"></ion-icon>
+      <ion-label>Item</ion-label>
+    </ion-item>
+
+    <ion-item href="#" class="ion-activated">
+      <ion-icon name="arrow-undo-outline"></ion-icon>
+      <ion-label>Item con enlace al inicio</ion-label>
+    </ion-item>
+
+  </ion-card>
+
+  <!--ION FAB-->
+  <ion-fab horizontal="end" vertical="center" slot="fixed" edge>
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list>
+      <ion-fab-button color="light" href="https://instagram.com/" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light" href="https://twitter.com/" target="_blank">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light" href="https://www.youtube.com" target="_blank">
+        <ion-icon name="logo-youtube"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
