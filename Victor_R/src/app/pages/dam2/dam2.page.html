@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+
+    <!--Boton Atras-->
+    <ion-buttons slot = "start">
+      <ion-back-button defaultHref="/" color = "tertiary"></ion-back-button>
+    </ion-buttons>
+    <!--Titulo-->
+    <ion-title><ion-icon name="desktop-outline"></ion-icon> 2ª DAM</ion-title>
+    <!--Icono-->
+    <ion-button slot="primary">
+      <ion-icon name="desktop-outline"></ion-icon>
+    </ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Checkboxes in a List -->
+    <ion-item *ngFor="let dato of datos">
+      <ion-avatar slot="start"><img src= {{dato.icono}} ></ion-avatar>
+
+      <ion-label>{{dato.asignatura}}</ion-label>
+      <ion-checkbox color = {{dato.color}} [(ngModel)] = "dato.isChecked"></ion-checkbox>
+    </ion-item>
+</ion-content>

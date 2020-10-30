@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><ion-icon name="desktop-outline"></ion-icon> 2ª DAM</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Checkboxes in a List -->
+    <ion-item *ngFor="let dato of datos">
+      <ion-avatar slot="start"><img src= {{dato.icono}} ></ion-avatar>
+
+      <ion-label>{{dato.asignatura}}</ion-label>
+      <ion-checkbox color = {{dato.color}} [(ngModel)] = "dato.isChecked"></ion-checkbox>
+    </ion-item>
+</ion-content>

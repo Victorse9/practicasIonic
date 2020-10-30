@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><ion-icon name="map"></ion-icon> 1º DAM</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <!--Base de datos-->
+    <ion-item>
+      <ion-checkbox [(ngModel)]= "a1" color="danger" slot="end" (click)="tostadora1()"></ion-checkbox>
+      <ion-avatar><img src="https://concepto.de/wp-content/uploads/2018/04/base-de-datos-min-e1523470739502.jpg"></ion-avatar>
+      <ion-label>Base de datos</ion-label>
+    </ion-item>
+    <!--Programacion-->
+    <ion-item>
+      <ion-checkbox [(ngModel)]= "a2" color="success" slot="end" (click)="tostadora2()"></ion-checkbox>
+      <ion-avatar><img src="https://i.blogs.es/fd396a/hook/1366_2000.jpg"></ion-avatar>
+      <ion-label>Programación</ion-label>
+    </ion-item>
+    <!--Sistemas informáticos-->
+    <ion-item>
+      <ion-checkbox [(ngModel)]= "a3" color="warning" slot="end" (click)="tostadora3()"></ion-checkbox>
+      <ion-avatar><img src="https://www.si-mad.com/wp-content/uploads/2018/02/monitorizacion-sistemas-informaticos.jpg"></ion-avatar>
+      <ion-label>Sistemas informáticos</ion-label>
+    </ion-item>
+    <!--Lenguaje de Marcas-->
+    <ion-item>
+      <ion-checkbox [(ngModel)]= "a4" color="dark" slot="end" (click)="tostadora4()"></ion-checkbox>
+      <ion-avatar><img src="https://monicacacedaquispe.atavist.com/data/files/organization/124103/image/derivative/scale~1200x1200~foto1-1493139663-92.jpg"></ion-avatar>
+      <ion-label>Lenguaje de Marcas</ion-label>
+    </ion-item>
+    <!--FOL-->
+    <ion-item>
+      <ion-checkbox [(ngModel)]= "a5" color="primary" slot="end" (click)="tostadora5()"></ion-checkbox>
+      <ion-avatar><img src="https://3.bp.blogspot.com/-2y0dHywLWXE/UYvsJ94ShII/AAAAAAAABpk/9dUrWbQcGqk/s1600/FOL.png"></ion-avatar>
+      <ion-label>FOL</ion-label>
+    </ion-item>
+    <!--Entornos de Desarrollo-->
+    <ion-item>
+      <ion-checkbox [(ngModel)]= "a6" color="light" slot="end" (click)="tostadora6()"></ion-checkbox>
+      <ion-avatar><img src="https://www.campusmvp.es/recursos/image.axd?picture=IDEs-Java.png"></ion-avatar>
+      <ion-label>Entornos de Desarrollo</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
